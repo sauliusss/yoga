@@ -1,0 +1,25 @@
+body {
+}
+
+.nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+}
+
+.btn {
+  display: inline-block;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+a + a {
+  margin-left: 30px;
+}
