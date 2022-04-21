@@ -11,18 +11,17 @@ body {
   background-image: url(../img/jogaa.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .nav {
   display: inline-block;
-  width: 100%;
-  border: 5px solid #595372;
+  width: 90%;
 }
 
 .logo {
   display: inline-block;
   float: left;
+  margin-left: 17%;
 }
 
 .logo_icon {
@@ -43,7 +42,6 @@ a {
   text-decoration: none;
   color: #595372;
   margin: 0;
-  float: left;
 }
 
 a:hover {
@@ -56,10 +54,6 @@ a + a {
 
 span {
   color: #ff4522;
-}
-
-main {
-  width: 100%;
 }
 
 .text {
