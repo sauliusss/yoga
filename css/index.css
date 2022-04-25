@@ -59,7 +59,11 @@ a {
 }
 
 a:first-child {
+<<<<<<< HEAD
   border-bottom: 2px solid var(--orandzine);
+=======
+  border-bottom: solid #ff4522;
+>>>>>>> 2715847dcc67571d47cc7c130157cee0a82045b1
 }
 
 a:hover {
