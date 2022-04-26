@@ -18,6 +18,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #595372;
   background-color: #ffffff;
+  background-image: url(../img/jogaa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -58,6 +61,7 @@ a {
 
 a:first-child {
   border-bottom: 2px solid var(--orandzine);
+  margin-left: 0;
 }
 
 a:hover {
@@ -72,11 +76,7 @@ main {
   display: inline-block;
   margin-left: var(--soninis-atstumas);
   width: var(--main-width);
-}
-
-.img {
-  display: inline-block;
-  width: var(--image-width);
+  margin-top: 60px;
 }
 
 span {
@@ -84,27 +84,33 @@ span {
 }
 
 .text {
-  display: inline-block;
   margin-top: 7%;
   width: var(--text-width);
   margin-right: var(--text-margin);
   font-size: 18px;
-  float: left;
 }
 
 .text h2 {
+  display: inline-block;
   width: 100%;
-  font-size: 36px;
-}
-
-.orange_btn {
-  background-color: var(--orandzine);
-  width: 180px;
-  text-align: center;
-  padding: 10px;
-  margin-top: 80px;
+  font-size: 45px;
+  margin-bottom: 7%;
 }
 
 .orange_btn a {
   color: #ffffff;
+  display: inline-block;
+  background-color: var(--orandzine);
+  border: 1px solid #d1583f;
+  text-align: center;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+.orange_btn a:hover {
+  background-color: #ffffff;
+  color: var(--orandzine);
 }
