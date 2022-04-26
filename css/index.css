@@ -8,17 +8,16 @@
   --orandzine: #ff4522;
   --plotis: 1000px;
   --soninis-atstumas: calc((100% - var(--plotis)) / 2);
-  --text-width: calc(var(--plotis) - 0.4);
-  --image-width: calc(var(--plotis) - 0.4);
+  --text-width: calc(var(--plotis) * 0.4);
+  --image-width: calc(100% - var(--plotis) / 2);
+  --main-width: calc(100% - var(--soninis-atstumas));
+  --text-margin: calc(var(--plotis) * 0.1);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #595372;
   background-color: #ffffff;
-  background-image: url(../img/jogaa.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -29,13 +28,12 @@ header {
 
 .nav {
   display: inline-block;
-  width: 90%;
+  width: var(--plotis);
 }
 
 .logo {
   display: inline-block;
   float: left;
-  margin-left: 17%;
 }
 
 .logo_icon {
@@ -59,11 +57,7 @@ a {
 }
 
 a:first-child {
-<<<<<<< HEAD
   border-bottom: 2px solid var(--orandzine);
-=======
-  border-bottom: solid #ff4522;
->>>>>>> 2715847dcc67571d47cc7c130157cee0a82045b1
 }
 
 a:hover {
@@ -77,7 +71,12 @@ a + a {
 main {
   display: inline-block;
   margin-left: var(--soninis-atstumas);
-  width: var(--plotis);
+  width: var(--main-width);
+}
+
+.img {
+  display: inline-block;
+  width: var(--image-width);
 }
 
 span {
@@ -85,13 +84,16 @@ span {
 }
 
 .text {
+  display: inline-block;
   margin-top: 7%;
-  width: 25%;
-  margin-left: 15%;
+  width: var(--text-width);
+  margin-right: var(--text-margin);
   font-size: 18px;
+  float: left;
 }
 
 .text h2 {
+  width: 100%;
   font-size: 36px;
 }
 
